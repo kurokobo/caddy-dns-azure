@@ -45,13 +45,13 @@ or with the Caddyfile:
 ```
 tls {
   dns azure {
-    tenant_id {env.AZURE_TENANT_ID}
-    client_id {env.AZURE_CLIENT_ID}
-    client_secret {env.AZURE_CLIENT_SECRET}
-    subscription_id {env.AZURE_SUBSCRIPTION_ID}
-    resource_group_name {env.AZURE_RESOURCE_GROUP_NAME}
+    tenant_id {$AZURE_TENANT_ID}
+    client_id {$AZURE_CLIENT_ID}
+    client_secret {$AZURE_CLIENT_SECRET}
+    subscription_id {$AZURE_SUBSCRIPTION_ID}
+    resource_group_name {$AZURE_RESOURCE_GROUP_NAME}
   }
 }
 ```
 
-You can replace `{env.*}` with the actual values if you prefer to put it directly in your config instead of an environment variable.
+You can replace `{$*}` or `{env.*}` with the actual values if you prefer to put it directly in your config instead of an environment variable.
