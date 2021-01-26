@@ -33,8 +33,7 @@ func (p *Provider) Provision(ctx caddy.Context) error {
 	p.Provider.SubscriptionId = repl.ReplaceAll(p.Provider.SubscriptionId, "")
 	p.Provider.ResourceGroupName = repl.ReplaceAll(p.Provider.ResourceGroupName, "")
 
-	// Initialize the Azure client
-	return p.NewClient()
+	return nil
 }
 
 // UnmarshalCaddyfile sets up the DNS provider from Caddyfile tokens. Syntax:
