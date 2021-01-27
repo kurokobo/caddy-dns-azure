@@ -1,6 +1,8 @@
 Azure DNS module for Caddy
 ===========================
 
+**UPDATE: This project has been moved to [caddy-dns/azure](https://github.com/caddy-dns/azure) and this repository is no longer maintained. See [caddy-dns/azure](https://github.com/caddy-dns/azure) for the latest release.**
+
 This package contains a DNS provider module for [Caddy](https://github.com/caddyserver/caddy). It can be used to manage DNS records in Azure DNS Hosted zones.
 
 ## Caddy module name
